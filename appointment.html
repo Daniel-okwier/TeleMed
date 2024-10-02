@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="appointment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- navigation bar -->
+<header>
+  <div class="header-container">
+    <div class="profile-picture-container">
+      <img src="./images/Medical Logo Design Symbol Icon on transparent background PNG.jpeg" alt="Telemedicine Doctor" class="profile-picture">
+      <span class="site-name">We Care</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="./about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+        <li><a href="./services.html"><i class="fas fa-clinic-medical"></i> Services</a></li>
+        <li><a href="./blog.html"><i class="fas fa-newspaper"></i> Blog</a></li>
+        <li><a href="./contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+    <div class="auth-buttons">
+      <a href="register.html">Register</a>
+      <a href="login.html">Login</a>
+    </div>
+  </div>
+</header>
+        <!-- Modal/Popover HTML -->
+<div class="appointment-modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Schedule Appointment</h2>
+      <form>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+  
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required>
+  
+        <label for="reason">Reason for Visit:</label>
+        <textarea id="reason" name="reason" required></textarea>
+  
+        <button type="submit" class="submit-btn">Schedule Appointment</button>
+      </form>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="copyright">
+      <p>&copy; 2024 We Care Telemedicine. All rights reserved.</p>
+      <p>Developed by Hawassa University Students</p>
+    </div>
+  </div>
+</footer>
+  <script src="app.js"></script>
+</body>
+</html>

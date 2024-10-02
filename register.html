@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="register.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- navigation bar -->
+  <header>
+    <div class="header-container">
+      <div class="profile-picture-container">
+        <img src="./images/Medical Logo Design Symbol Icon on transparent background PNG.jpeg" alt="Telemedicine Doctor" class="profile-picture">
+        <span class="site-name">We Care</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="./about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+          <li><a href="./services.html"><i class="fas fa-clinic-medical"></i> Services</a></li>
+          <li><a href="./blog.html"><i class="fas fa-newspaper"></i> Blog</a></li>
+          <li><a href="./contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <a href="./register.html">Register</a>
+        <a href="./login.html">Login</a>
+      </div>
+    </div>
+  </header>
+  <div class="register-container">
+    <div class="register-card">
+      <h1>Register</h1>
+      <form id="register-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <span class="error-message" id="name-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <span class="error-message" id="email-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          <span class="error-message" id="password-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" name="confirm-password" required>
+          <span class="error-message" id="confirm-password-error"></span>
+        </div>
+        <button type="submit" class="register-btn">Register</button>
+      </form>
+      <p class="signup-link">Already have an account? <a href="login.html">Login</a></p>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="copyright">
+      <p>&copy; 2024 We Care Telemedicine. All rights reserved.</p>
+      <p>Developed by Hawassa University Students</p>
+    </div>
+  </div>
+</footer>
+  <script src="reg.js"></script>
+</body>
+</html>
